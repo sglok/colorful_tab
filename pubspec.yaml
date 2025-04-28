@@ -1,6 +1,6 @@
 name: flutter_colorful_tab
 description: A colorful TabBar for Flutter where each tab has a color (inspired by SmartNews app).
-version: 0.1.1
+version: 0.1.2
 homepage: https://github.com/datdescartes/flutter_colorful_tab
 
 environment:
@@ -19,7 +19,6 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
-flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:

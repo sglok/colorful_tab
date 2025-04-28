@@ -571,7 +571,7 @@ class _TabItemWidget extends AnimatedWidget {
   @override
   Widget build(BuildContext context) {
     final ThemeData themeData = Theme.of(context);
-    final TabBarTheme tabBarTheme = TabBarTheme.of(context);
+    final TabBarThemeData tabBarTheme = TabBarTheme.of(context);
     final Animation<double> animation = listenable as Animation<double>;
 
     // To enable TextStyle.lerp(style1, style2, value), both styles must have
