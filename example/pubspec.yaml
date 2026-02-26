@@ -1,8 +1,7 @@
-name: example
-description: "A new Flutter project."
-# The following line prevents the package from being accidentally published to
-# pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+name: colorful_tab
+description: "Colorful tab"
+version: 1.0.0
+homepage: https://github.com/sglok/colorful_tab.git
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -16,7 +15,6 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
 
 environment:
   sdk: '>=3.3.2 <4.0.0'
@@ -30,6 +28,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  colorful_tab:
+    path: ../
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -46,7 +47,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
-  flutter_colorful_tab:
+  colorful_tab:
     path: ../
 
 # For information on the generic Dart part of this file, see the
