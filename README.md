@@ -2,22 +2,39 @@
 
 A colorful TabBar for Flutter where each tab has a color (inspired by SmartNews app).
 
-![demo](https://raw.githubusercontent.com/datdescartes/flutter_colorful_tab/master/demo.gif)
+A customizable and animated tab bar for Flutter applications.
+
+## 📌 About This Package
+
+This package is a modified version of [original_package_name](https://pub.dev/packages/flutter_colorful_tab) by [datvu7](https://github.com/datvu7/flutter_colorful_tab). 
+
+### What's Changed/Added:
+- ✨ Fixed changes for latest flutter package
+
+## 📦 Installation
+
+Add to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  colorful_tab: ^1.0.0
+
+![demo](https://github.com/sglok/colorful_tab/main/demo.gif)
 
 ## Getting Started
 
 Add this to your package's pubspec.yaml file:
 ```yaml
   dependencies:
-    flutter_colorful_tab: {current_version}
+    colorful_tab: {current_version}
 ```
 
 Import the library in your file:
 ```dart
-import 'package:flutter_colorful_tab/flutter_colorful_tab.dart';
+import 'package:colorful_tab/colorful_tab.dart';
 ```
 
-Use the flutter_colorful_tab like this: 
+Use the colorful_tab like this: 
 ```dart
 ColorfulTabBar(
   tabs: [
