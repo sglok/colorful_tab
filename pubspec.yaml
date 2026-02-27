@@ -1,6 +1,6 @@
 name: colorful_tab
 description: "A colorful TabBar for Flutter where each tab has a color (inspired by SmartNews app)."
-version: 1.0.0
+version: 1.0.0+1
 homepage: https://github.com/sglok/colorful_tab.git
 
 environment:
