@@ -10,7 +10,7 @@ import 'package:flutter/rendering.dart';
 class TabItem {
   TabItem({
     required this.color,
-    required this.title,
+    required this.titles,
     Color? unselectedColor,
     this.labelColor,
     this.unselectedLabelColor,
@@ -22,7 +22,7 @@ class TabItem {
   final Color color;
 
   /// tab Widget, typical Text(), must be non-null
-  final Widget title;
+  final Widget titles;
 
   /// tab color when unselected
   final Color unSelectedColor;
@@ -636,7 +636,7 @@ class _TabItemWidget extends AnimatedWidget {
               style: textStyle.copyWith(color: color),
               child: IconTheme.merge(
                 data: IconThemeData(color: color, size: 20),
-                child: tab.title,
+                child: tab.titles,
               ),
             ),
           ),

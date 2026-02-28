@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:colorful_tab/colorful_tab.dart'; 
+import 'package:colorful_tab/colorful_tab.dart';
 
 void main() {
   runApp(const MyApp());
@@ -70,35 +70,35 @@ class _MyHomePageState extends State<MyHomePage>
             ColorfulTabBar(
               tabs: [
                 TabItem(
-                    title: const Row(children: [
+                    titles: const Row(children: [
                       Icon(Icons.home_outlined),
                       SizedBox(width: 8),
                       Text('Home')
                     ]),
                     color: Colors.red.shade600),
                 TabItem(
-                    title: const Row(children: [
+                    titles: const Row(children: [
                       Icon(Icons.favorite_outline),
                       SizedBox(width: 8),
                       Text('Favorite')
                     ]),
                     color: Colors.orange.shade600),
                 TabItem(
-                    title: const Row(children: [
+                    titles: const Row(children: [
                       Icon(Icons.search_outlined),
                       SizedBox(width: 8),
                       Text('Search')
                     ]),
                     color: Colors.lime.shade600),
                 TabItem(
-                    title: const Row(children: [
+                    titles: const Row(children: [
                       Icon(Icons.settings_outlined),
                       SizedBox(width: 8),
                       Text('Settings')
                     ]),
                     color: Colors.blue.shade600),
                 TabItem(
-                    title: const Row(children: [
+                    titles: const Row(children: [
                       Icon(Icons.devices_other_outlined),
                       SizedBox(width: 8),
                       Text('Others')
@@ -117,15 +117,16 @@ class _MyHomePageState extends State<MyHomePage>
               tabs: [
                 TabItem(
                   color: Colors.red,
-                  title: const Text('Tab 1 - Home'),
+                  titles: const Text('Tab 1 - Home'),
                   labelColor: Colors.black,
                   unselectedLabelColor: Colors.yellow.shade600,
                 ),
                 TabItem(
-                    color: Colors.green, title: const Text('Tab 2 - Favorite')),
+                    color: Colors.green,
+                    titles: const Text('Tab 2 - Favorite')),
                 TabItem(
                   color: Colors.orange,
-                  title: const Text('Tab 3 - Search'),
+                  titles: const Text('Tab 3 - Search'),
                   labelColor: Colors.black,
                   unselectedLabelColor: Colors.yellow.shade600,
                   labelStyle: const TextStyle(
@@ -134,9 +135,9 @@ class _MyHomePageState extends State<MyHomePage>
                       fontSize: 20, fontWeight: FontWeight.normal),
                 ),
                 TabItem(
-                    color: Colors.blue, title: const Text('Tab 4 - Settings')),
+                    color: Colors.blue, titles: const Text('Tab 4 - Settings')),
                 TabItem(
-                    color: Colors.purple, title: const Text('Tab 5 - Others')),
+                    color: Colors.purple, titles: const Text('Tab 5 - Others')),
               ],
               controller: _tabController,
             ),
@@ -145,7 +146,7 @@ class _MyHomePageState extends State<MyHomePage>
               unselectedHeight: 48,
               tabs: [
                 TabItem(
-                    title: const Column(
+                    titles: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.home_outlined),
@@ -154,7 +155,7 @@ class _MyHomePageState extends State<MyHomePage>
                         ]),
                     color: Colors.red.shade600),
                 TabItem(
-                    title: const Column(
+                    titles: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.favorite_outline),
@@ -163,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage>
                         ]),
                     color: Colors.red.shade600),
                 TabItem(
-                    title: const Column(
+                    titles: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.search_outlined),
@@ -172,7 +173,7 @@ class _MyHomePageState extends State<MyHomePage>
                         ]),
                     color: Colors.lime.shade600),
                 TabItem(
-                    title: const Column(
+                    titles: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.settings_outlined),
@@ -181,7 +182,7 @@ class _MyHomePageState extends State<MyHomePage>
                         ]),
                     color: Colors.blue.shade600),
                 TabItem(
-                    title: const Column(
+                    titles: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.devices_other_outlined),
@@ -196,19 +197,19 @@ class _MyHomePageState extends State<MyHomePage>
               alignment: TabAxisAlignment.start,
               tabs: [
                 TabItem(
-                    title: const Icon(Icons.home_outlined),
+                    titles: const Icon(Icons.home_outlined),
                     color: Colors.red.shade600),
                 TabItem(
-                    title: const Icon(Icons.favorite_outline),
+                    titles: const Icon(Icons.favorite_outline),
                     color: Colors.orange.shade600),
                 TabItem(
-                    title: const Icon(Icons.search_outlined),
+                    titles: const Icon(Icons.search_outlined),
                     color: Colors.lime.shade600),
                 TabItem(
-                    title: const Icon(Icons.settings_outlined),
+                    titles: const Icon(Icons.settings_outlined),
                     color: Colors.blue.shade600),
                 TabItem(
-                    title: const Icon(Icons.devices_other_outlined),
+                    titles: const Icon(Icons.devices_other_outlined),
                     color: Colors.purple.shade600),
               ],
               controller: _tabController,
@@ -219,23 +220,23 @@ class _MyHomePageState extends State<MyHomePage>
               unselectedLabelColor: Colors.white30,
               tabs: [
                 TabItem(
-                    title: const Icon(Icons.home_outlined),
+                    titles: const Icon(Icons.home_outlined),
                     color: Colors.blue.shade600,
                     unselectedColor: Colors.blue.shade400),
                 TabItem(
-                    title: const Icon(Icons.favorite_outline),
+                    titles: const Icon(Icons.favorite_outline),
                     color: Colors.blue.shade600,
                     unselectedColor: Colors.blue.shade300),
                 TabItem(
-                    title: const Icon(Icons.search_outlined),
+                    titles: const Icon(Icons.search_outlined),
                     color: Colors.blue.shade600,
                     unselectedColor: Colors.blue.shade300),
                 TabItem(
-                    title: const Icon(Icons.settings_outlined),
+                    titles: const Icon(Icons.settings_outlined),
                     color: Colors.blue.shade600,
                     unselectedColor: Colors.blue.shade300),
                 TabItem(
-                    title: const Icon(Icons.devices_other_outlined),
+                    titles: const Icon(Icons.devices_other_outlined),
                     color: Colors.blue.shade600,
                     unselectedColor: Colors.blue.shade300),
               ],
